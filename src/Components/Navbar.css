@@ -1,0 +1,138 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+  }
+  
+  .subnavbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .logo {
+    color: rgb(230, 214, 3);
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+
+  .menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+  }
+  
+
+  .navbarItems {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbarItems li {
+    margin: 0 15px;
+  }
+  
+  .navbarItems a {
+    color: white;
+    text-decoration: none;
+  }
+  
+
+  .button {
+    background-color: #f39c12;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+  }
+  
+
+  @media (max-width: 1024px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .logo {
+      font-size: 20px;
+    }
+  
+    .navbarItems {
+      margin-top: 10px;
+    }
+  
+    .navbarItems li {
+      margin: 10px 0;
+    }
+  
+    .button {
+      margin-top: 10px;
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+  
+    .navbarItems {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      background-color: #333;
+      position: absolute;
+      top: 60px; 
+      left: 0;
+      right: 0;
+      padding-top: 20px;
+    }
+  
+    .navbarItems.active {
+      display: flex;
+    }
+  
+    .navbarItems li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 18px;
+    }
+  
+    .menu-icon {
+      font-size: 26px;
+    }
+  
+    .navbarItems li {
+      font-size: 14px;
+    }
+  
+    .button {
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+  }
+  
