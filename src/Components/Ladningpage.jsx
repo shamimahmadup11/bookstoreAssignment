@@ -12,7 +12,7 @@ import {
 
 const LandingPage = () => {
   return (
-    <Container sx={{ width: "100%", my: 3, py: 2 }}>
+    <Container sx={{ width: "100%", maxWidth: "1200px", my: 3, boxShadow: 2, py: 2 }}>
       {/* Hero Section */}
       <Box
         sx={{
